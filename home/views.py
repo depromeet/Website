@@ -14,10 +14,9 @@ def mail(request):
     name= request.POST['name']
     fromEmail= request.POST['email']
     message= request.POST['message']
-    contents = 'email from '+name+' whose email: '+fromEmail+'to depromeet :  '+message
-    toEmail = 'elvmaks@gmail.com'
-
-    email = EmailMessage('mail from depromeet site', contents, to=[toEmail])
+    contents =fromEmail+'to depromeet :  '+message
+ 	toEmail = 'deproapply@gmail.com'
+	email = EmailMessage('questions from '+ name, message, fromEmail, to=[toEmail])
     email.send()
     return HttpResponseRedirect(reverse('home'))
 
