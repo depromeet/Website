@@ -15,8 +15,8 @@ def mail(request):
     fromEmail= request.POST['email']
     message= request.POST['message']
     contents =fromEmail+'to depromeet :  '+message
- 	toEmail = 'deproapply@gmail.com'
-	email = EmailMessage('questions from '+ name, message, fromEmail, to=[toEmail])
+    toEmail = 'deproapply@gmail.com'
+    email = EmailMessage('questions from '+ name, message, fromEmail, to=[toEmail])
     email.send()
     return HttpResponseRedirect(reverse('home'))
 
