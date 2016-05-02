@@ -19,4 +19,3 @@ def mail(request):
     email = EmailMessage(name+'님이 보내주신 메일입니다.'.decode('utf-8'), message+'\n\n'+'sent from depromeet.com :-)'.decode('utf-8'), fromEmail, to=[toEmail])
     email.send()
     return HttpResponseRedirect(reverse('home'))
-

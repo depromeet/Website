@@ -1,0 +1,47 @@
+@media (min-width: 769px){
+.mobile{
+    display: none;
+    }
+}
+
+
+@media (max-width: 768px){
+.desktop{
+    display: none;
+}
+  .content {
+	padding: 40% 0 0;
+	}
+#tf-home .content br{
+    line-height: 130%;
+    }
+}
+
+@media (max-width: 603px){
+#tf-menu.navbar-default {
+	background-color: rgba(0, 0, 0, 0.79);
+	}
+#tf-works li.pull-right, #tf-works li.pull-left {
+    margin-top: 10px;
+    float: none !important;
+    text-align: center;
+    display: block;
+}
+label{
+    float: none !important
+}
+.pull-left.fnav,
+.pull-right.fnav {
+    float: none !important;
+    text-align: center;
+}
+
+.hover-bg .hover-text {
+    padding: 12% 10%;
+}
+}
+@media (max-width: 360px){
+.hover-bg .hover-text {
+    padding: 22% 10%;
+}
+}
